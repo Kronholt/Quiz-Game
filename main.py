@@ -4,7 +4,7 @@ from quiz_brain import QuizBrain
 
 question_bank = []
 for question in question_data:
-    new_entry = Question(question['text'], question['answer'])
+    new_entry = Question(question['question'], question['correct_answer'])
     question_bank.append(new_entry)
 points = 0
 quiz = QuizBrain(question_bank)
